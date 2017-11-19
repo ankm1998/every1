@@ -9,21 +9,17 @@
     </head>
     <body>
 
-        <div id="mario-chat" style="background:rgb(153, 51, 0); -webkit-box-shadow: 0px 8px 6px -1px rgba(0,0,0,0.4);
--moz-box-shadow: 0px 8px 10px -1px rgba(0,0,0,0.4);
-box-shadow: 0px 8px 9px -1px rgba(0,0,0,0.5); border-radius:4px;">
-            <h2 style="background:rgb(102, 102, 255); color:white; width:44%; margin-left:5%; -webkit-box-shadow: 0px 8px 15px -1px rgba(0,0,0,0.71);
--moz-box-shadow: 0px 8px 15px -1px rgba(0,0,0,0.71);
-box-shadow: 0px 6px 8px -1px rgba(0,0,0,0.5);">AN's CHAT ROOM</h2>
+        <div id="mario-chat">
+            <div class="header_space"><h2>AN's CHAT ROOM</h2></div>
             <div id="chat-window">
                 <div id="output"></div>
                 <div id="feedback"></div>
-            </div>
-            <input id="handle" type="text" placeholder="your name" />
-            <input id="message" type="text" placeholder="Message..." style="background-color:rgb(179, 230, 179); height:60px; color:white; box-sizing:border-box; border:2px inset;" />
-            <button id="send">Send</button>
+             </div>
+            <input id="handle" type="text" value="your name">
+            <input id="message" type="text" placeholder="Message..." style="background-color:rgb(179, 230, 179); height:60px; color:black; box-sizing:border-box; border:2px inset;">
+            <div class="but"><p><button id="send">Send</button></p></div>
         </div>
-
-    </body>
+    
     <script src="/chat.js"></script>
-</html>
+
+</body></html>
