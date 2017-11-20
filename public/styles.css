@@ -99,17 +99,16 @@ input{
     font-size: 16px;
 }
 
-button{
+#send{
     background: rgba(0,0,0,0.5);
     color: #fff;
     font-size: 18px;
-    border: 1;
     padding: 5px;
-    width: 40%;
+    width: 30%;
     border-radius: 50px;
     text-align:center;
-    margin-left:30%;
-    display:block;
+    margin-left:13%;
+    display:inline;
 }
 
 #handle {
@@ -118,13 +117,36 @@ button{
     border: 2px;
     border-color:bisque;
     border-style:dashed;
+    position: relative;
 }
 
-button:hover {
+#refresh {
+    background: rgba(0,0,0,0.5);
+    color: red;
+    font-size: 18px;
+    padding: 5px;
+    width: 30%;
+    border-radius: 50px;
+    text-align:center;
+    display:inline;
+    margin-left: 15%;
+}
+
+#send:hover {
     background-color:aliceblue;
     color:black;
     text-shadow: 1px 1px green;
     
+    -webkit-box-shadow: 0 8px 6px -6px black;
+    -moz-box-shadow: 0 8px 6px -6px black;
+    box-shadow: 0 8px 6px -6px black;
+    z-index: 2;
+}
+
+#refresh:hover {
+    background-color:aliceblue;
+    color:black;
+    text-shadow: 1px 1px green;
     -webkit-box-shadow: 0 8px 6px -6px black;
     -moz-box-shadow: 0 8px 6px -6px black;
     box-shadow: 0 8px 6px -6px black;
