@@ -15,9 +15,10 @@
                 <div id="output"></div>
                 <div id="feedback"></div>
              </div>
-            <input id="handle" type="text" value="your name" onkeyup ="clean('handle')" onkeydown="clean('handle')">
-             <input id="message" type="text" placeholder="Message..." onkeyup ="clean('message')" onkeydown="clean('message')" style="background-color:rgb(179, 230, 179); height:60px; color:black; box-sizing:border-box; border:2px inset;">
-            <div class="but"><p><button id="send" onclick ="return validateText('send');">Send</button></p></div>
+             <input id="handle" type="text" value="your name" onkeyup ="clean('handle')" onkeydown="clean('handle')">
+            <input id="message" type="text" placeholder="Message..." onkeyup ="clean('message')" onkeydown="clean('message')" style="background-color:rgb(179, 230, 179); height:60px; color:black; box-sizing:border-box; border:2px inset;">
+            <div class="but"><button id="send" onclick ="return validateText('send'); clear('send');">Send</button>            <button id="refresh" onClick="location.href=location.href">clear all</button>
+            </div>
         </div>
         <script type="text/javascript">
         function clean(e) {
@@ -30,7 +31,7 @@
                 var box = document.getElementById("handle");
                 var box2 = document.getElementById("message");
                 if(box.value=="" || box2.value=="") {
-                    alert("ERR:NAME AS WELL AS MESSAGE FIELDS CANNOT BE BLANK");
+                    alert("ERR:NAME AS WELL AS MESSAGE FIELDS SHOULD NOT BE BLANK");
                     return false;
                 }
             }
