@@ -17,8 +17,9 @@
              </div>
              <input id="handle" type="text" value="your name" onkeyup ="clean('handle')" onkeydown="clean('handle')">
             <input id="message" type="text" placeholder="Message..." onkeyup ="clean('message')" onkeydown="clean('message')" style="background-color:rgb(179, 230, 179); height:60px; color:black; box-sizing:border-box; border:2px inset;">
-            <div class="but"><button id="send" onclick ="return validateText('send'); clear('send'); clearField();">Send</button>            <button id="refresh" onClick="location.href=location.href">clear all</button>
+            <div class="but"><button id="send" onclick ="return validateText('send'); clear('send');">Send</button>            <button id="refresh" onClick="location.href=location.href">clear all</button>
             </div>
+            <button type="button" onclick="ClearFields();">Clear</button>
         </div>
         <script type="text/javascript">
         function clean(e) {
@@ -36,10 +37,10 @@
                 }
             }
             
-            function ClearField() {
+            function ClearFields() {
 
-     document.getElementById("textfield1").value = "";
-     document.getElementById("textfield2").value = "";
+     document.getElementById("handle").value = "";
+     document.getElementById("message").value = "";
 }
         </script>
     
