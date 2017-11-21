@@ -19,7 +19,7 @@
             <input id="message" type="text" placeholder="Message..." onkeyup ="clean('message')" onkeydown="clean('message')" style="background-color:rgb(179, 230, 179); height:60px; color:black; box-sizing:border-box; border:2px inset;">
             <div class="but"><button id="send" onclick ="return validateText('send');">Send</button>            <button id="refresh" onClick="location.href=location.href">clear all</button>
             </div>
-            <!--<button type="button" onclick="ClearFields();">Clear</button>-->
+            <button type="button" onclick="ClearFields();">Clear text field only</button>
         </div>
         <script type="text/javascript">
         function clean(e) {
