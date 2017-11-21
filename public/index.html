@@ -3,7 +3,15 @@
     <head>
         <meta charset="utf-8">
         <title>App by-Aash</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/JavaScript>
+                      var viewMode = getCookie("view-mode");
+if(viewMode == "desktop"){
+    viewport.setAttribute('content', 'width=1024');
+}else if (viewMode == "mobile"){
+    viewport.setAttribute('content', 'width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no');
+}
+                              </script>
+    
         <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.js"></script>
         <link href="/styles.css" rel="stylesheet" />
     </head>
