@@ -17,19 +17,17 @@
              </div>
              <input id="handle" type="text" value="your name" onkeyup ="clean('handle')" onkeydown="clean('handle')">
             <input id="message" type="text" placeholder="Message..." onkeyup ="clean('message')" onkeydown="clean('message')" style="background-color:rgb(179, 230, 179); height:60px; color:black; box-sizing:border-box; border:2px inset;">
-            <div class="but"><button id="send" onclick ="return validateText('send');">Send</button>            <button id="refresh" onClick="location.href=location.href">clear all</button>
+            <div class="but"><button id="send" onclick="setTimeout(ClearFields, 100); validateText();">Send</button>            <button id="refresh" onclick="location.href=location.href">clear all</button>
             </div>
-            <button type="button" onclick="ClearFields();">Clear text field only</button>
         </div>
         <script type="text/javascript">
         function clean(e) {
             var textfield = document.getElementById(e);
-            var regex = /[^a-z 0-9?!.,'😀😁😂😃😄😅😆😉😊😋😎😍😘😗😙😚☺😐😑😶😏😣😥😮😯😪😫😴😌😛😜😝😒😓😔😕😲😖😞😟😤😢😭😦😧😨😩😬😰😱😳😵😡😠😷😇😈👿👹👺💀👻👽👾💩😺😸😹😻😼😽🙀😿😾🙈🙉🙊👶👦👧👨👩👴👵👮💂👷👸👳👲👱👰👼🎅🙍🙎🙅🙆💁🙋🙇💆💇🚶🏃💃👯🛀👤👥🏇🏂🏄🚣🏊🚴🚵👫👬👭💏💑👪💪👈👉👆👇✌✋👌👍👎👊👊👋👏👐🙌🙏💅👂👃👣👀👅👄💋💘❤💓💔💕💖💗💙💚💛💜💝💞💟💌💤💢💣💥💦💨💫💬💭👓👔👕👗👗👙👜]/gi;
+            var regex = /[^a-z 0-9?!.,'😀😁😂😃😄😅😆😉😊😋😎😍😘😗😙😚☺😐😑😶😏😣😥😮😯😪😫😴😛😜😝😒😓😔😕😲😖😞😟😤😢😭😦😧😨😩😬😰😱😳😵😡😠😷😇😈👿👹👺💀👻👽👾💩😺😸😹😻😼😽🙀😿😾🙈🙉🙊👶👦👧👨👩👴👵👮💂👷👸👳👲👱👰👼🎅🙍🙎🙅🙆💁🙋🙇💆💇🚶🏃💃👯🛀👤👥🏇🏂🏄🚣🏊🚴🚵👫👬👭💏💑👪💪👈👉👆✌✌✋👌👍👎🙌👐👏👏✊✊🙏💅👂👣👀👅💖💕💔💓❤💘💋💞💜💛💙💙💌💢💣💥💦💢💌👔💭💫👗👘👚👛👜🎒👠👡👢👢]/gi;
             textfield.value = textfield.value.replace(regex,"")
         }
             
             function validateText() {
-                clearFields();
                 var box = document.getElementById("handle");
                 var box2 = document.getElementById("message");
                 if(box.value=="" || box2.value=="") {
@@ -37,12 +35,12 @@
                     return false;
                 }
             }
-            
-            function ClearFields() {
+             function ClearFields() {
 
-     document.getElementById("message").value = "";
+            document.getElementById("message").value = "";
 }
         </script>
+    
     
     <script src="/chat.js"></script>
 
