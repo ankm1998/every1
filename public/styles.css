@@ -35,16 +35,29 @@ h2{
 
     background-color:darkred;
 }
+@media screen and (min-width: 767px) {
+   #mario-chat{
+    max-width: 600px;
+    margin: 80px auto;
+    border: 1px solid #ddd;
+    
+    -webkit-box-shadow: 0px 8px 6px -1px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0px 8px 10px -1px rgba(0,0,0,0.4);
+    box-shadow: 0px 8px 9px -1px rgba(0,0,0,0.5); border-radius:4px;
+    
+
+    background-color:darkred;
+}
+}
 
 #chat-window{
-    height: 305px;
+    height: 285px;
     overflow-x: hidden;
     overflow-y: scroll;
     background-image: url("backimg.jpg");
     max-width: 600px;
     background-repeat: repeat;
 }
-
 #output {
     background-image: url("backimg.jpg");
     max-width: 600px;
