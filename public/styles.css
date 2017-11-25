@@ -1,6 +1,6 @@
 body{
     font-family: 'Nunito';
-    background-color:darkblue;
+    background-color:rgba(0,0,0,0.8);
     padding: 0;
     margin: 0;
 }
@@ -11,13 +11,20 @@ h2{
     padding-right: 0;
     font-family: cursive;
     font-weight:bold;
-    background:rgb(102, 102, 255); color:white; width:44%; margin-left:5%; -webkit-box-shadow: 0px 8px 15px -1px rgba(0,0,0,0.71);
-    -moz-box-shadow: 0px 8px 15px -1px rgba(0,0,0,0.71);
-    box-shadow: 0px 6px 8px -1px rgba(0,0,0,0.5);
+    background:rgb(102, 102, 255); 
+    color:white; 
+    width:44%; 
+    margin-left:5%;
+    -webkit-box-shadow: 0px 8px 15px -1px rgba(0,0,0,0.7);
+    -moz-box-shadow: 0px 8px 15px -1px rgba(0,0,0,1);
+    box-shadow: 0px 6px 8px -1px rgba(0,0,0,1);
+    text-shadow: 2px 1px 1px black;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .header_space {
-    background-color: rgba(0,0,0,0);
+    
     max-width: 600px;
     height:6x;
     border-bottom: 2px solid rgba(0,0,0,0.2);
@@ -28,7 +35,15 @@ h2{
 #mario-chat{
     max-width: 600px;
     border-top: 1px solid white;
-    background-color:darkred;
+    box-shadow:inset 0px 8px 20px rgba(0,0,0,1);
+    -webkit-box-shadow:inset 0px 0px 20px rgba(0,0,0,1);
+    -moz-box-shadow:inset 0px 0px 20px rgba(0,0,0,1);  
+}
+
+#pura {
+     -webkit-box-shadow: 0px 8px 15px -1px rgba(0,0,0,0.7);
+    -moz-box-shadow: 0px 8px 15px -1px rgba(0,0,0,1);
+    box-shadow: 0px 6px 8px -1px rgba(0,0,0,1);
 }
 
 @media screen and (min-width: 767px) {
@@ -147,9 +162,13 @@ input{
     font-family: Nunito;
     font-size: 16px;
 }
+.but {
+    background-color:rgba(0,0,0,0);
+    padding: 10px 0;
+}
 
 #send{
-    background: rgba(0,0,0,0.5);
+    background:darkblue;
     color: #fff;
     font-size: 18px;
     padding: 5px;
@@ -164,9 +183,11 @@ input{
 }
 
 #handle {
-    background-color: darkorange;
+    background-color:cadetblue;
     box-sizing: border-box;
     border: 2px;
+    border-left: 0;
+    border-right: 0;
     border-color:bisque;
     border-style:dashed;
     position: relative;
@@ -175,7 +196,7 @@ input{
 }
 
 #refresh {
-    background: rgba(0,0,0,0.5);
+    background: darkblue;
     color:darkorange;
     font-size: 18px;
     padding: 5px;
@@ -212,9 +233,23 @@ input{
 button:focus {
     outline: none;
 }
-.but {
-    background-color:darkblue;
-    padding: 8px 0;
+
+#message {
+    background-color:rgb(143, 188, 143);
+    height:62px; 
+    color:black; 
+    box-sizing:border-box;
+    border:3px inset; 
+    border-left: 1px inset;
+    border-right: 1px inset;
+    width: 100%;
+    resize: none;
+    padding: 10px 20px; 
+    font-family: Nunito; 
+    font-size: 17px; 
+    display: block; 
+    line-height: normal;
+    border-color:rgba(0,0,0,0.777);
 }
 
 p{
