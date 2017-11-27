@@ -24,7 +24,7 @@ message.addEventListener('keydown',function(){
 socket.on('chat', function(data){
   feedback.innerHTML="";
     output.innerHTML += '<p><strong>' + data.handle + ': </strong>' + data.message + '</p>';
-    window.navigator.vibrate(200);
+    window.navigator.vibrate(50);
     
 });
 
