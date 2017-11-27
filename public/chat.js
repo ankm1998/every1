@@ -24,10 +24,10 @@ message.addEventListener('keydown',function(){
 socket.on('chat', function(data){
   feedback.innerHTML="";
     output.innerHTML += '<p><strong>' + data.handle + ': </strong>' + data.message + '</p>';
-    window.navigator.vibrate(50);
     
 });
 
 socket.on('typing',function(data){
   feedback.innerHTML='<p><em>'+data+' is typing a message...</em></p>';
+  window.navigator.vibrate(50);
 });
