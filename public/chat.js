@@ -20,6 +20,11 @@ message.addEventListener('keydown',function(){
     socket.emit('typing',handle.value);
 });
 
+//1sdvbrt
+btn.addEventListener('click',function(){
+    socket.emit('typing1',handle.value);
+});
+
 // Listen for events
 socket.on('chat', function(data){
   feedback.innerHTML="";
@@ -29,5 +34,10 @@ socket.on('chat', function(data){
 
 socket.on('typing',function(data){
   feedback.innerHTML='<p><em>'+data+' is typing a message...</em></p>';
+  window.navigator.vibrate(50);
+});
+
+//1sdbvrt
+socket.on('typing1',function(data){
   window.navigator.vibrate(50);
 });
