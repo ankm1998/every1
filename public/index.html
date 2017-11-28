@@ -29,9 +29,9 @@
             <div id="fheading">
               <h1>WELCOME</h1>
               <div id="firstpage">
-              <input type="text" placeholder="enter your name"/>
+              <input id="name" type="text" placeholder="enter your name"/>
               <input type="text" placeholder="Enter group name"/>
-              <button class="ent"><strong>ENTER</strong></button>
+              <button class="ent" onclick="copyTextValue();"><strong>ENTER</strong></button>
             </div>
           </div>
         <script type="text/javascript">
@@ -75,6 +75,10 @@ $("#pura").css({display:"block"});
 );
 
         });
+	    function copyTextValue() {
+        var text1 = document.getElementById("Name").value;
+        document.getElementById("handle").value = text1;
+}
         </script>
     
     
