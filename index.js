@@ -24,6 +24,11 @@ io.on('connection', (socket) => {
      socket.on('typing',function(data) {
        socket.broadcast.emit('typing',data);
     });
+    
+    //1sbvrt
+      socket.on('typing1',function(data) {
+       socket.broadcast.emit('typing1',data);
+    });
 
 
 });
