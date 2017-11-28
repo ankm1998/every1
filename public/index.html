@@ -5,26 +5,39 @@
         <title>App by-Aash</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.js"></script>
-        <link href="/styles.css" rel="stylesheet" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+	<link href="/styles.css" rel="stylesheet" />
     </head>
     <body>
 
+       <div id="pura" >
         <div id="mario-chat">
-            <div class="header_space"><h2>RexX CHAT ROOM</h2></div>
+            <div class="header_space"><h2>AN's CHAT ROOM</h2></div>
             <div id="chat-window">
-		<div id="feedback"></div>
+                  <div id="feedback"></div>
                 <div id="output"></div>
+
              </div>
-            <input id="handle" type="text" value="your name" onkeyup ="clean('handle')" onkeydown="clean('handle')">
-                        <textarea id="message" type="text" placeholder="Message..." onkeyup="clean(&#39;message&#39;)" onkeydown="clean(&#39;message&#39;)" style="background-color:rgb(179, 230, 179); height:62px; color:black; box-sizing:border-box; border:2px inset; width: 100%; resize: none; padding: 10px 20px; font-family: Nunito; font-size: 17px; display: block; line-height: normal;"></textarea>
+             <input id="handle" type="text" value="your name" onkeyup ="clean('handle')" onkeydown="clean('handle')">
+                        <textarea id="message" type="text" placeholder="type a message..." onkeyup="clean(&#39;message&#39;)" onkeydown="clean(&#39;message&#39;)" style="background-color:rgb(179, 230, 179); height:62px; color:black; box-sizing:border-box; border:2px inset; width: 100%; resize: none; padding: 10px 20px; font-family: Nunito; font-size: 17px; display: block; line-height: normal;"></textarea>
 
             <div class="but"><button id="send" onclick="setTimeout(ClearFields, 100); validateText();">Send</button>            <button id="refresh" onclick="location.href=location.href">clear all</button>
             </div>
         </div>
+            </div>
+
+            <div id="fheading">
+              <h1>WELCOME</h1>
+              <div id="firstpage">
+              <input type="text" placeholder="enter your name"/>
+              <input type="text" placeholder="Enter group name"/>
+              <button class="ent"><strong>ENTER</strong></button>
+            </div>
+          </div>
         <script type="text/javascript">
         function clean(e) {
             var textfield = document.getElementById(e);
-            var regex = /[^a-z 0-9?!.,'()@%😀😁😂😃😄😅😆😉😊😋😎😍😘😗😙😚☺😐😑😶😏😣😥😮😯😪😫😴😛😜😝😒😓😔😕😲😖😞😟😤😢😭😦😧😨😩😬😰😱😳😵😡😠😷😇😈👿👹👺💀👻👽👾💩😺😸😹😻😼😽🙀😿😾🙈🙉🙊👶👦👧👨👩👴👵👮💂👷👸👳👲👱👰👼🎅🙍🙎🙅🙆💁🙋🙇💆💇🚶🏃💃👯🛀👤👥🏇🏂🏄🚣🏊🚴🚵👫👬👭💏💑👪💪👈👉👆✌✌✋👌👍👎🙌👐👏👏✊✊🙏💅👂👣👀👅💖💕💔💓❤💘💋💞💜💛💙💙💌💢💣💥💦💢💌👔💭💫👗👘👚👛👜🎒👠👡👢👢💎💍💄🎓🎩👒👑👢👡👠👟👞🎒👝👜👛👚👙👘👗👖👕👔👓💭💬💫💨💦💥💣💢💤💌💟💞💝💜💛💚💙💗💖💕💔💓❤💘💋👄👅👀👣👃👂💅🙏🙌👐👏👋👊✊👎👍👌✋✌👇👆👉👈💪👪💑💏👭👬👫🚵🚴🏊🚣🏄👯🛀👤👥🏇🏂🏃🚶💇💆🙇🙋💁👼🎅🙍🙎🙅🐵🐒🐶🐕🐩🐺🐱🐮🐎🐴🐆🐅🐯🐈🐃🐃🐄🐷🐖🐗🐭🐘🐫🐪🐐🐑🐏🐁🐀🐹🐰🐇🐻🐻🐨🐥🐤🐓🐔🐾🐼🐸🐸🐢🐍🐲🐲🐍🐢🐊🐸🐧🐦🐉🐳🐋🐬🐟🐟🐠🐡🐞🐝🐜🐛🐛🐌🐚🐙💐🌸💮🌹🌹🌺🌻🌻🌼🌾🌵🌴🌳🌲🌱🌷🌿🍀🍁🍂🍃https://media.giphy.com/media/k9qu4GDdGVDLa/giphy.gif https://media.giphy.com/media/h8UyZ6FiT0ptC/giphy.gif https://media.giphy.com/media/Ftz07proVX6Rq/giphy.gif https://media.giphy.com/media/fCdN32nPcgZ1K/giphy.gif 🍇🍈🍉🍊🍋🍌🍍🍅🍓🍒🍑🍐🍏🍎🍆🌽🍄🌰🍞🍖🍗🍘🍱🍲🍳🍕🍟🍔🍙🍚🍛🍜🍝🍠🍢🍨🍧🍦🍡🍥🍤🍣🍩🍪🎂🍰🍫🍬🍭🍷🍶🍵☕🍼🍯🍮🍸🍹🍺🍻🍴🔪🌍🌎🌏🌐🗾🌋🗻🏦🏥🏤🏣🏢🏡🏠🏨🏩🏪🏫🏬🏭🏯⛺⛲⛪🗽🗼💒🏰🌁🌃🌄🌅🌆🌇🌉🎪💈🎢🎡🎠🌌♨🎭🎨🎰🚂🚃🚄🚅🚞🚝🚊🚉🚈🚇🚆🚋🚌🚍🚎🚐🚑🚒🚙🚘🚗🚖🚕🚔🚓🚚🚛🚜🚲🚏⛽🚨🚢🚤⛵⚓🚧🚦🚥✈💺🚁🚟🚠🚡🚀⌚⏳⌛🛁🚿🚽🚪⏰🕛🕧🕐🕜🕑🕕🕠🕟🕒🕒🕣🕢🕖🕥🕦🌒🌓🌚🌘🌗🌕🌔🌚🌟🌝🌜🌝🌂🌀⛅🌠❄🔥🌊🌂☔🌈⛅☁⛄🎃🎄🎆🎇✨✨🎈🎉🎉🎑🎐🎏🎎🎍🎋🎊🎀🎫🎫⚽⚾⚾🏀⛳🎯🎳🎱🎾🏉🏈🎽🎿🎮🎲♠♥🎴🃏♦♦🔇🔈🔈🔉🔊🔊📢📣📣📯🎧🎤🎶🎵🎼🔕🔔📻🎷🎸🎹🎺🎺🎻📱🔌🔋🎺🎸🎷📻🔌📠📠☎📲💻📀🎥🔍📼📷📡📙📔🔑🔒🔩🔨🔐🏧🚰♿🚺🚱⛔🚳🚯✖➿🏁🎌]/gi;
+            var regex = /[<>;${}]/gi;
             textfield.value = textfield.value.replace(regex,"")
         }
             
@@ -49,9 +62,22 @@
         }
 		setInterval(updateScroll,8000);
         </script>
+    <script type="text/javascript">
+
+        $(document).ready(function functionName() {
+$('.ent').click(
+  function functionName() {
+$('#fheading').hide();
+
+$("#pura").css({display:"block"});
+
+  }
+);
+
+        });
+        </script>
     
     
-    
-    <script src="/chat.js"></script>
+    <script src="chat.js"></script>
 
 </body></html>
