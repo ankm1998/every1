@@ -11,9 +11,9 @@ h2{
     padding-right: 0;
     font-family: cursive;
     font-weight:bold;
-    background:rgb(102, 102, 255); 
-    color:white; 
-    width:44%; 
+    background:rgb(102, 102, 255);
+    color:white;
+    width:44%;
     margin-left:5%;
     -webkit-box-shadow: 0px 8px 15px -1px rgba(0,0,0,0.7);
     -moz-box-shadow: 0px 8px 15px -1px rgba(0,0,0,1);
@@ -24,12 +24,12 @@ h2{
 }
 
 .header_space {
-    
+
     max-width: 600px;
     height:6x;
     border-bottom: 2px solid rgba(0,0,0,0.2);
     z-index: 200;
-    
+
 }
 
 #mario-chat{
@@ -37,7 +37,7 @@ h2{
     border-top: 1px solid white;
     box-shadow:inset 0px 8px 20px rgba(0,0,0,1);
     -webkit-box-shadow:inset 0px 0px 20px rgba(0,0,0,1);
-    -moz-box-shadow:inset 0px 0px 20px rgba(0,0,0,1);  
+    -moz-box-shadow:inset 0px 0px 20px rgba(0,0,0,1);
 }
 
 #pura {
@@ -82,11 +82,11 @@ h2{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    
+
 }
 
 #output {
-    background-image: 
+    background-image:
     max-width: 600px;
     background-repeat: repeat;
 }
@@ -109,7 +109,7 @@ h2{
 
 #output p:nth-child(even){
     background-color: rgba(255, 255, 255,0.4);
-   
+
 }
 
 #feedback p{
@@ -167,8 +167,8 @@ input{
     padding: 10px 0;
 }
 
-#send{
-    background:darkblue;
+#send {
+    background: hsl(180, 100%, 10%);
     color: #fff;
     font-size: 18px;
     padding: 5px;
@@ -196,7 +196,7 @@ input{
 }
 
 #refresh {
-    background: darkblue;
+    background: hsl(180, 100%, 10%);
     color:darkorange;
     font-size: 18px;
     padding: 5px;
@@ -236,18 +236,18 @@ button:focus {
 
 #message {
     background-color:rgb(143, 188, 143);
-    height:62px; 
-    color:black; 
+    height:62px;
+    color:black;
     box-sizing:border-box;
-    border:3px inset; 
+    border:3px inset;
     border-left: 1px inset;
     border-right: 1px inset;
     width: 100%;
     resize: none;
-    padding: 10px 20px; 
-    font-family: Nunito; 
-    font-size: 17px; 
-    display: block; 
+    padding: 10px 20px;
+    font-family: Nunito;
+    font-size: 17px;
+    display: block;
     line-height: normal;
     border-color:rgba(0,0,0,0.777);
 }
@@ -255,4 +255,76 @@ button:focus {
 p{
     padding: 0;
     margin: 0;
+}
+
+#pura {
+  display: none;
+}
+
+#firstpage{
+  display: block;
+  margin: 5%;
+  margin-top: 15%;
+  padding: 20px;
+  background-color: skyblue;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 8px 6px  black;
+  -moz-box-shadow: 0 8px 6px  black;
+  box-shadow: 0 10px 6px -6px black;
+  box-sizing: border-box;
+  border:5px groove;
+}
+
+#firstpage input {
+  width: 85%;
+  display: inline-block;
+  margin-top: 5%;
+  background-color: rgb(0, 51, 51);
+  color: white;
+  box-sizing:border-box;
+  border: 2px inset rgb(255, 255, 255);
+  border-radius: 50px;
+  text-align: center;
+  -webkit-box-shadow: 0 8px 6px  black;
+ -moz-box-shadow: 0 8px 6px  black;
+ box-shadow: 0 8px 6px -6px black;
+}
+#firstpage button {
+  text-align: center;
+  margin-top: 7%;
+  margin-left: 0;
+  padding: 10px;
+  width: 30%;
+  color: white;
+  text-shadow: 0px 2px 1px black;
+  background-color: rgba(0,0,0,0.7);
+  border-radius: 50px;
+  -webkit-box-shadow: 0 8px 6px  black;
+ -moz-box-shadow: 0 8px 6px  black;
+ box-shadow: 0 8px 6px -6px black;
+}
+  #firstpage button:hover {
+  background-color:rgba(0,0,0,0.5);
+  }
+
+  #fheading {
+    text-align: center;
+  }
+  #fheading h1{
+    margin-top: 15%;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 3px 7px black;
+    background-color: rgb(77, 0, 0);
+    width: 60%;
+    border-radius: 30px;
+    padding: 5px;
+    border:5px inset ;
+    -webkit-box-shadow: 0px 4px 18px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 4px 18px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 4px 18px 0px rgba(0,0,0,0.75);
+
+    display: inline-block;
+  }
+#firstpage input:focus {
+  outline: none;
 }
