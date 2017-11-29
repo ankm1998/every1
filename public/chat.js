@@ -1,5 +1,5 @@
 // Make connection
-var socket = io.connect('http://every1schat.herokuapp.com'); 
+var socket = io.connect('http://every1schat1.herokuapp.com'); 
 
 // Query DOM
 var message = document.getElementById('message'),
