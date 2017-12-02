@@ -18,8 +18,8 @@
                 <div id="output"></div>
 
              </div>
-             <input id="handle" type="text" value="your name" onkeyup ="clean('handle')" onkeydown="clean('handle')">
-                        <textarea id="message" type="text" placeholder="type a message..." onkeyup="clean(&#39;message&#39;)" onkeydown="clean(&#39;message&#39;)" style="background-color:rgb(179, 230, 179); height:62px; color:black; box-sizing:border-box; border:2px inset; width: 100%; resize: none; padding: 10px 20px; font-family: Nunito; font-size: 17px; display: block; line-height: normal;"></textarea>
+             <input id="handle" type="text" value="your name" onkeyup ="clean('handle')" onkeydown="clean('handle')" required >
+                        <textarea id="message" type="text" placeholder="type a message..." onkeyup="clean(&#39;message&#39;)" onkeydown="clean(&#39;message&#39;)" required style="background-color:rgb(179, 230, 179); height:62px; color:black; box-sizing:border-box; border:2px inset; width: 100%; resize: none; padding: 10px 20px; font-family: Nunito; font-size: 17px; display: block; line-height: normal;"></textarea>
 
             <div class="but"><button id="send" onclick="setTimeout(ClearFields, 100); validateText();">Send</button>            <button id="refresh" onclick="location.href=location.href">Exit</button>
             </div>
@@ -29,7 +29,7 @@
              <div id="fheading">
               <h1>WELCOME</h1>
               <div id="firstpage">
-              <input id="name" type="text" placeholder="enter your name"/>
+              <input id="name" type="text" placeholder="enter your name" required />
               <input id="grp" type="text" placeholder="Enter group name"/>
               <button class="ent" onclick="copyTextValue();"><strong>ENTER</strong></button>
             </div>
