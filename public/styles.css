@@ -34,7 +34,6 @@ h2{
 
 #mario-chat{
     max-width: 600px;
-    border-top: 1px solid white;
     box-shadow:inset 0px 8px 20px rgba(0,0,0,1);
     -webkit-box-shadow:inset 0px 0px 20px rgba(0,0,0,1);
     -moz-box-shadow:inset 0px 0px 20px rgba(0,0,0,1);
